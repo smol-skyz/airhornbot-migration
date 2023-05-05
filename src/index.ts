@@ -138,7 +138,7 @@ async function importCsv(): Promise<unknown> {
 
 async function main() {
   await postgres.connect();
-  if (EXPORT_CSV === 'false') {
+  if (EXPORT_CSV === 'true') {
     await exportCsv();
   }
   if (IMPORT_CSV === 'true') {
